@@ -68,6 +68,7 @@
   <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" remote="colt" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="colt" />
   <project path="external/toybox" name="platform_external_toybox" groups="pdk" remote="colt" />
+  <project path="external/DUtils" name="platform_external_DUtils" remote="colt" />
 
   <!-- System Repos -->
   <project path="system/bt" name="platform_system_bt" groups="pdk" remote="colt" />
@@ -132,4 +133,5 @@
   <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" groups="pdk-fs" remote="colt" />
   <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" groups="pdk-fs" remote="colt" />
   <project path="packages/apps/ColtCenter" name="platform_packages_apps_ColtCenter" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="colt" />
 </manifest>
