@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project path="vendor/colt" name="platform_vendor_colt" remote="colt" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom-opensource_dataservices" remote="colt" />
+  <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom-opensource_interfaces" remote="colt" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom-opensource_cryptfs_hw" remote="colt" />
+  <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="colt" />
+
+</manifest>

@@ -2,10 +2,12 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-8.1.0_r1"
-           remote="aosp"
+	   fetch="https://android.googlesource.com"
+           review="https://android-review.googlesource.com/" 
+           revision="refs/tags/android-8.1.0_r1" />
+
+  <default remote="aosp"
+           sync-c="true"
            sync-j="4" />
 
   <project path="build/make" name="platform/build" groups="pdk" >
@@ -621,5 +623,8 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+
+  <!-- ColtOS Manifest -->
+  <include name="colt-aosp.xml" />
 
 </manifest>

@@ -1,0 +1,49 @@
+Colt-AOSP : Let's Get Started :)
+===============================
+
+![ColtOS](https://github.com/Colt-Oreo/Colt_Manifest/blob/cos8.x/coltspray.gif)
+
+ColtOS Project
+===============
+ColtOS Project is a team of learners and based on lineageos with some customizations.
+We have cherry-picked the features from many 
+other roms/projects and we are very thankfull to them!!
+
+ColtOS on Social Media
+======================
+[![](https://github.com/ColtOS/manifest/blob/cos7.x/gplus.png)](https://plus.google.com/u/2/communities/102067248475500399675)[![](https://github.com/ColtOS/manifest/blob/cos7.x/telegram.png)](https://t.me/ColtChatBox)
+
+-------
+* [**LineageOS/Cyanogenmod**](https://github.com/LineageOS)
+* [**DirtyUnicorns**](https://github.com/DirtyUnicorns)
+* [**Pure Nexus**](https://github.com/PureNexusProject)
+* [**ValidusOS**](https://github.com/ValidusOS)
+* [**AOSCP**](https://github.com/cypheros)
+* [**OmniROM**](https://github.com/omnirom/)
+* [**AicpROM**](https://github.com/AICP/)
+-------
+
+How to Build?
+-------------
+
+To initialize your local repository using the ColtOS trees, use a 
+command like this:
+
+```bash
+  repo init -u git://github.com/Colt-AOSP/platform_manifest.git -b cos8.x
+```
+  
+Then to sync up:
+----------------
+
+```bash
+repo sync --no-tags --no-clone-bundle --force-sync -c
+```
+Finally to build:
+-----------------
+
+```bash
+  . build/envsetup.sh
+  brunch <device_name>
+```
+

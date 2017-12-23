@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- Begin Colt-AOSP Project repos -->
+
+<!-- Manifest & Build Environment -->
+  <project path="platform_manifest" name="platform_manifest" remote="colt" />
+  <project path="build/make" name="platform_build" groups="pdk" remote="colt" >  
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="art" name="platform_art" groups="pdk" remote="colt" />
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="colt" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="colt" />
+  <project path="build/kati" name="platform_build_kati" groups="pdk,tradefed" remote="colt" />
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="colt">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  
+  <project path="development" name="platform_development" groups="pdk-cw-fs,pdk-fs" remote="colt" />
+  
+  <!-- External Packages -->
+  <project path="external/aac" name="platform_external_aac" groups="pdk" remote="colt" />
+  <project path="external/ant-wireless/ant_native" name="platform_external_ant-wireless_ant_native" remote="colt" />
+  <project path="external/ant-wireless/ant_service" name="platform_external_ant-wireless_ant_service" remote="colt" />
+  <project path="external/ant-wireless/antradio-library" name="platform_external_ant-wireless_antradio-library" remote="colt" />
+  <project path="external/apache-http" name="platform_external_apache-http" groups="pdk" remote="colt" />
+  <project path="external/bash" name="platform_external_bash" remote="colt" />
+  <project path="external/boringssl" name="platform_external_boringssl" groups="pdk" remote="colt" />
+  <project path="external/brctl" name="platform_external_brctl" remote="colt" />
+  <project path="external/bzip2" name="platform_external_bzip2" groups="pdk" remote="colt" />
+  <project path="external/connectivity" name="platform_external_connectivity" remote="colt" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" groups="pdk" remote="colt" />
+  <project path="external/ebtables" name="platform_external_ebtables" remote="colt" />
+  <project path="external/elfutils" name="platform_external_elfutils" groups="pdk" remote="colt" />
+  <project path="external/exfat" name="platform_external_exfat" remote="colt" />
+  <project path="external/f2fs-tools" name="platform_external_f2fs-tools" groups="pdk" remote="colt" />
+  <project path="external/flac" name="platform_external_flac" groups="pdk" remote="colt" />
+  <project path="external/fsck_msdos" name="platform_external_fsck_msdos" groups="pdk-cw-fs,pdk-fs" remote="colt" />
+  <project path="external/fuse" name="platform_external_fuse" remote="colt" />
+  <project path="external/gptfdisk" name="platform_external_gptfdisk" groups="pdk-fs" remote="colt" />
+  <project path="external/htop" name="platform_external_htop" remote="colt" />
+  <project path="external/icu" name="platform_external_icu" groups="pdk" remote="colt" />
+  <project path="external/iproute2" name="platform_external_iproute2" groups="pdk" remote="colt" />
+  <project path="external/ipsec-tools" name="platform_external_ipsec-tools" groups="pdk-cw-fs,pdk-fs" remote="colt" />
+  <project path="external/iptables" name="platform_external_iptables" groups="pdk-cw-fs,pdk-fs" remote="colt" />
+  <project path="external/iw" name="platform_external_iw" remote="colt" />
+  <project path="external/jemalloc"  name="platform_external_jemalloc" groups="pdk" remote="colt" />
+  <project path="external/json-c" name="platform_external_json-c" remote="colt" />
+  <project path="external/libhevc" name="platform_external_libhevc" groups="pdk-fs" remote="colt" />
+  <project path="external/libncurses" name="platform_external_libncurses" remote="colt" />
+  <project path="external/libnetfilter_conntrack" name="platform_external_libnetfilter_conntrack" remote="colt" />
+  <project path="external/libnfnetlink" name="platform_external_libnfnetlink" remote="colt" />
+  <project path="external/libnfc-nxp" name="platform_external_libnfc-nxp" groups="pdk" remote="colt" />
+  <project path="external/libvterm" name="platform_external_libvterm" groups="pdk-cw-fs,pdk-fs" remote="colt" />
+  <project path="external/mksh" name="platform_external_mksh" groups="pdk" remote="colt" />
+  <project path="external/nano" name="platform_external_nano" remote="colt" />
+  <project path="external/openssh" name="platform_external_openssh" remote="colt" />
+  <project path="external/powertop" name="platform_external_powertop" remote="colt" />
+  <project path="external/selinux" name="platform_external_selinux" groups="pdk" remote="colt" />
+  <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" remote="colt" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="colt" />
+  <project path="external/toybox" name="platform_external_toybox" groups="pdk" remote="colt" />
+
+  <!-- System Repos -->
+  <project path="system/bt" name="platform_system_bt" groups="pdk" remote="colt" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="colt" />
+  <project path="system/extras" name="platform_system_extras" groups="pdk" remote="colt" />
+  <project path="system/media" name="platform_system_media" groups="pdk" remote="colt" />
+  <project path="system/netd" name="platform_system_netd" groups="pdk" remote="colt" />
+  <project path="system/nfc" name="platform_system_nfc" groups="pdk" remote="colt" />
+  <project path="system/qcom" name="platform_system_qcom" groups="qcom" remote="colt" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="colt" />
+  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="colt" />
+  <project path="system/libhidl" name="platform_system_libhidl" groups="pdk" remote="colt" />
+  <project path="system/tools/hidl" name="platform_system_tools_hidl" groups="pdk" remote="colt" />
+  <project path="system/hardware/interfaces" name="platform_system_hardware_interfaces" groups="pdk" remote="colt" />
+
+  <!-- Hardware Repos -->
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="colt" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="colt" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" groups="pdk" remote="colt" />
+  <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" groups="qcom" remote="colt" />
+  <project path="hardware/qcom/bt-caf" name="platform_hardware_qcom_bt" groups="qcom" revision="cos8.x-caf" remote="colt" />
+  <project path="hardware/qcom/fm" name="platform_hardware_qcom_fm" groups="qcom,qcom_fm" remote="colt" />
+  <project path="hardware/qcom/gps" name="platform_hardware_qcom_gps" groups="qcom,qcom_gps" remote="colt" />
+  <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="colt" />
+  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" groups="qcom_wlan" remote="colt" />
+  <project path="hardware/qcom/wlan-caf" name="platform_hardware_qcom_wlan" groups="qcom_wlan" revision="cos8.x-caf" remote="colt" />
+  <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" remote="colt" />
+  <project path="hardware/ril-caf" name="platform_hardware_ril" groups="pdk" revision="cos8.x-caf" remote="colt" />
+
+  <!-- Device Repos -->
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="colt" />
+
+  <!-- Frameworks Repos -->
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="colt" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="colt" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="colt" />
+  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" groups="pdk" remote="colt" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="colt" />
+  <project path="frameworks/opt/datetimepicker" name="platform_frameworks_opt_datetimepicker" groups="pdk" remote="colt" />  
+  <project path="frameworks/support" name="platform_frameworks_support" groups="pdk" remote="colt" />
+
+  <!-- Colt Apps Repos -->
+  <project path="packages/apps/ExactCalculator" name="platform_packages_apps_Calculator" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/Calendar" name="platform_packages_apps_Calendar" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/Email" name="platform_packages_apps_Email" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="colt" />
+  <project path="packages/apps/Recorder" name="platform_packages_apps_Recorder" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/UnifiedEmail" name="platform_packages_apps_UnifiedEmail" groups="pdk-fs" remote="colt" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="colt" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="colt" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="colt" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="colt" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/SnapdragonGallery" name="platform_packages_apps_SnapdragonGallery" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" groups="pdk-fs" remote="colt" />
+  <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" groups="pdk-fs" remote="colt" />
+
+</manifest>
