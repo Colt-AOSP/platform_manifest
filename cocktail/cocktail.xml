@@ -131,5 +131,5 @@
   <project path="packages/apps/SnapdragonGallery" name="platform_packages_apps_SnapdragonGallery" groups="pdk-fs" remote="colt" />
   <project path="packages/apps/SnapdragonMusic" name="platform_packages_apps_SnapdragonMusic" groups="pdk-fs" remote="colt" />
   <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" groups="pdk-fs" remote="colt" />
-
+  <project path="packages/apps/ColtCenter" name="platform_packages_apps_ColtCenter" groups="pdk-fs" remote="colt" />
 </manifest>
