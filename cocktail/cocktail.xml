@@ -87,17 +87,18 @@
   <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="colt" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="colt" />
   <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" groups="pdk" remote="colt" />
-  <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" groups="qcom" remote="colt" />
-  <project path="hardware/qcom/bt-caf" name="platform_hardware_qcom_bt" groups="qcom" revision="cos8.x-caf" remote="colt" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="los" />
+  <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom" remote="los" revision="lineage-15.1-caf" />
   <project path="hardware/qcom/fm" name="platform_hardware_qcom_fm" groups="qcom,qcom_fm" remote="colt" />
-  <project path="hardware/qcom/gps" name="platform_hardware_qcom_gps" groups="qcom,qcom_gps" remote="colt" />
-  <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="colt" />
-  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" groups="qcom_wlan" remote="colt" />
-  <project path="hardware/qcom/wlan-caf" name="platform_hardware_qcom_wlan" groups="qcom_wlan" revision="cos8.x-caf" remote="colt" />
-  <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" remote="colt" />
-  <project path="hardware/ril-caf" name="platform_hardware_ril" groups="pdk" revision="cos8.x-caf" remote="colt" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom,qcom_gps" remote="los" />
+  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk" remote="los" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="los" />
+  <project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="los" revision="lineage-15.1-caf" />
+  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="los" />
+  <project path="hardware/ril-caf" name="android_hardware_ril" groups="pdk" remote="los" revision="lineage-15.1-caf" />
 
   <!-- Device Repos -->
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="los" />
   <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="colt" />
 
   <!-- Frameworks Repos -->
