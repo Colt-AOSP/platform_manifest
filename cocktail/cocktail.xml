@@ -70,7 +70,7 @@
   <project path="external/toybox" name="platform_external_toybox" groups="pdk" remote="colt" />
 
   <!-- System Repos -->
-  <project path="system/bt" name="platform_system_bt" groups="pdk" remote="colt" />
+  <project path="system/bt" name="android_system_bt" groups="pdk" remote="los" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="colt" />
   <project path="system/extras" name="platform_system_extras" groups="pdk" remote="colt" />
   <project path="system/media" name="platform_system_media" groups="pdk" remote="colt" />
@@ -86,7 +86,6 @@
   <!-- Hardware Repos -->
   <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="colt" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="colt" />
-  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" groups="pdk" remote="colt" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="los" />
   <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom" remote="los" revision="lineage-15.1-caf" />
   <project path="hardware/qcom/fm" name="platform_hardware_qcom_fm" groups="qcom,qcom_fm" remote="colt" />
@@ -96,10 +95,12 @@
   <project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="los" revision="lineage-15.1-caf" />
   <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="los" />
   <project path="hardware/ril-caf" name="android_hardware_ril" groups="pdk" remote="los" revision="lineage-15.1-caf" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="los" />
 
   <!-- Device Repos -->
   <project path="device/qcom/common" name="android_device_qcom_common" remote="los" />
   <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="colt" />
+  <project path="device/colt/sepolicy" name="platform_device_colt_sepolicy" remote="colt" />
 
   <!-- Frameworks Repos -->
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="colt" />
