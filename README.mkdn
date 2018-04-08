@@ -30,7 +30,7 @@ To initialize your local repository using the ColtOS trees, use a
 command like this:
 
 ```bash
-  repo init -u git://github.com/Colt-AOSP/platform_manifest.git -b cos8.x
+  repo init -u git://github.com/Colt-AOSP/platform_manifest.git -b prerelease
 ```
   
 Then to sync up:
