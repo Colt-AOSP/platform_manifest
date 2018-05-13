@@ -116,4 +116,5 @@
   <remove-project name="platform/system/tools/hidl" />
   <remove-project name="platform/system/libhidl" />
   <remove-project name="platform/frameworks/support" />
+  <remove-project name="platform/packages/providers/DownloadProvider" />
 </manifest>
